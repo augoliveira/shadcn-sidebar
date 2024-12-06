@@ -3,7 +3,6 @@ import { useRouter } from 'next/navigation';
 import { BsTypeBold } from 'react-icons/bs';
 
 import { Boundary } from '@/components/ui/boundary';
-import ToolTip from '@/components/ui/ToolTipu';
 
 export default function NotFound() {
   const router = useRouter();
@@ -22,7 +21,6 @@ export default function NotFound() {
         </div>
       </div>
       <div className='mx-auto max-w-3xl p-10'>
-        <ToolTip tooltip='Home'>
           <button
             className='rounded bg-gray-900 p-3 text-white'
             type='button'
@@ -30,14 +28,11 @@ export default function NotFound() {
           >
             Ir para a Página Inicial
           </button>
-        </ToolTip>
 
         <div className='py-10'>
-          <ToolTip tooltip='Suporte'>
             <button className='rounded bg-gray-900 p-3 text-white'>
               <BsTypeBold />
             </button>
-          </ToolTip>
         </div>
       </div>
     </Boundary>
